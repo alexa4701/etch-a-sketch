@@ -1,15 +1,9 @@
 let gridSize = 16;
 
+// Draws the board in the DOM.
 function drawBoard() {
-  // function to draw the board (ie a grid of length x width divs)
-  // 1. Select the board in DOM
-  // 2. For x number of rows
-  //  - create the row
-  //  - create each column and append to the row
-  //  - append column to the board
-
     let board = document.querySelector(".board");
-    // Creates an array to hold each cell. Size of array = gridWidth squared
+    
     for(let rowNum = 0; rowNum < gridSize; rowNum++){
       console.log(board);
       // Create & append the row div
