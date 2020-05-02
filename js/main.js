@@ -82,7 +82,7 @@ function initSquares() {
 
 // Prompts & validates for grid size
 function getNewGridSize() {
-  let input = Number(prompt("How many squares should the board have? Enter a number between 0 and 200 :D"));;
+  let input = Number(prompt("How many squares should the board have? Enter a number between 0 and 200 :D"));
   while(input > 200 || input < 0 || isNaN(input)) {
     input = prompt("Invalid input :( Enter a number between 0 and 200");
   }
