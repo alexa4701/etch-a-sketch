@@ -5,10 +5,19 @@ body {
 .container {
     display: grid;
     grid-template-columns: 1fr auto 1fr;
+    row-gap: 50px;
     grid-template-areas: 
         "header header header"
         ". board ."
         "footer footer footer";
+}
+
+.header {
+    grid-area: header;
+    background-color: #F34769;
+}
+.header-title {
+    font-size: 20pt;
 }
 
 .board {
@@ -24,7 +33,11 @@ body {
     flex: 1 1 auto;
 }
 
-.board-cell {
+.board-square {
     flex: 1 1 auto;
     width: 100%;
+}
+
+.footer {
+    grid-area: footer;
 }
